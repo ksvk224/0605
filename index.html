@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+        .visual {
+            width: 1440px;
+            height: 900px;
+            margin: auto;
+            display: flex;
+            background-color: rgb(248, 198, 207);
+        }
+        .visual .inner {
+            width: 1100px;
+            margin: 0 auto;
+            height: 646px;
+            position: relative;
+        }
+        .visual .title {
+            position: absolute;
+            left: -50px;
+            margin-top: 30px;
+        }
+        .visual .pcup1 {
+            position: absolute;
+            bottom: 0;
+            left: 300px;
+            top: 150px;
+        }
+
+        .main{
+            width: 1400px;
+            height: 700px;
+            background-color: rgb(248, 198, 207);
+            margin: auto;
+            display: flex;
+            padding: 20px;
+            }
+            
+            .main img{
+                width: 10px;
+                height: 10px;
+            }
+            
+        .container {
+            position: relative;
+            width: 1400px;
+            height: 600px;
+            padding: 20px;
+            margin: auto;
+            background-color: rgb(248, 198, 207);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .section:nth-child(even) {
+            background-color: rgb(238, 137, 162);
+            background-image: url(./img/악보.png);
+            background-size: contain;
+        }
+        h1 {
+            color: white;
+            font-size: 100px;
+            text-shadow: 
+            1px 1px 3px aqua,
+            2px 2px 1px aqua,
+            3px 4px 5px rgb(238, 137, 162),
+            4px 5px 1px rgb(238, 137, 162),
+            5px 5px 1px aqua;
+            position: absolute;
+            top: 0;
+            margin: 0;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: antiquewhite;
+        }
+        .box1 {
+            width: 500px;
+            height: 490px;
+            margin: 10px;
+            background-image: url(./img/나.png);
+            background-size: contain;
+            margin-top: 150px;
+            margin-right: 160px;
+        }
+
+        
+        .box2 {
+            width: 300px;
+            height: 400px;
+            margin: 10px;
+            color: white;
+            margin-top: 240px;
+            margin-right: 180px;
+            font-size: 20px;
+            text-shadow: 5px 5px 5px rgb(238, 137, 162);
+        }
+
+
+        .box3 {
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            background-image: url(./img/포토샵.png);
+            background-size: contain;
+            margin-top: 150px;
+            margin-right: 80px;
+        }
+        .box4 {
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            background-image: url(./img/에펙.png);
+            background-size: contain;
+        }
+        .box5 {
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            background-image: url(./img/프리미어.png);
+            background-size: contain;
+        }
+
+
+
+        .box6 {
+            width: 500px;
+            height: 100px;
+            margin: 10px;
+            font-size: 30px;
+            color: rgb(82, 188, 236);
+            margin-top: 180px;
+        }
+        .box7 {
+            width: 500px;
+            height: 100px;
+            margin: 10px;
+            font-size: 30px;
+            color: rgb(199, 134, 236);
+        
+        }
+        .box8 {
+            width: 500px;
+            height: 100px;
+            margin: 10px;
+            font-size: 30px;
+            color: rgb(245, 126, 245);
+        }
+
+        .box9 {
+            width: 270px;
+            height: 370px;
+            margin: 10px;
+            background-image: url(./img/동아리.png);
+            background-size: contain;
+            margin-top: 150px;
+        }
+        .box10 {
+            width: 270px;
+            height: 370px;
+            margin: 10px;
+            background-image: url(./img/상세페이지.png);
+            background-size: contain;
+            margin-top: 150px;
+        }
+        .box11 {
+            width: 270px;
+            height: 370px;
+            margin: 10px;
+            background-image: url(./img/일러스트.png);
+            background-size: contain;
+            margin-top: 150px;
+        }
+    
+        .box12 {
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            background-image: url(./img/전화.png);
+            background-size: contain;
+            margin-top: 150px;
+            margin-right: 80px;
+        }
+        .box13 {
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            background-image: url(./img/메일.png);
+            background-size: contain;
+        }
+        .box14 {
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            background-image: url(./img/인스타.png);
+            background-size: contain;
+        }
+
+
+        .box15 {
+            width: 180px;
+            height: 120px;
+            margin: 10px;
+            margin-top: 240px;
+            color: white;
+            font-size: 20px;
+            text-shadow: 5px 5px 5px rgb(238, 137, 162);
+        }
+        .box16 {
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            color: white;
+            font-size: 20px;
+            text-shadow: 5px 5px 5px rgb(238, 137, 162);
+        }
+
+        .box17 {
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            color: white;
+            font-size: 20px;
+            text-shadow: 5px 5px 5px rgb(238, 137, 162);
+        }
+
+
+
+        .back-to-position {
+            opacity: 0;
+            transition: 1s;
+        }
+        .back-to-position.to-right {
+            transform: translateX(-150px);
+        }
+        .back-to-position.to-left {
+            transform: translateX(150px);
+        }
+        .show .back-to-position {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .show .back-to-position.delay-0 {
+            transition-delay: 0s;
+        }
+        .show .back-to-position.delay-1 {
+            transition-delay: .3s;
+        }
+    </style>
+</head>
+<body>
+    <section class="visual">
+        <div class="inner">
+            <div class="title fade-in">
+                <img src="./img/2024.png" alt="">
+            </div>
+            <div class="pcup1 fade-in">
+                <img src="./img/베이스1.png" alt="" class="cup1 image">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section scroll-spy">
+        <div class="container">
+            <h1>About</h1>
+            <div class="box1 back-to-position to-right delay-0"></div>
+            <div class="box2 back-to-position to-left delay-1">
+                <h2>김수빈 / Kim Su Bin</h2>
+                <h3>Graphic Designer</h3>
+                <h3>덕성여자고등학교 졸업</h3>
+                <h3>한국폴리텍대학교 시각디자인과 재학</h3>
+            </div>
+        </div>
+    </section>
+    <section class="section scroll-spy">
+        <div class="container">
+            <h1>Skills</h1>
+            <div class="skills">
+                <div class="box3 back-to-position to-right delay-0"></div>
+                <div class="box4 back-to-position to-right delay-0"></div>
+                <div class="box5 back-to-position to-right delay-0"></div>
+            </div>
+            <div class="skills_right">
+            <div class="box6 back-to-position to-left delay-1">
+                <h2>●●●●○ 80%</h2>
+            </div>
+            <div class="box7 back-to-position to-left delay-1">
+                <h2>●●●○○ 60%</h2>
+            </div>
+            <div class="box8 back-to-position to-left delay-1">
+                <h2>●●○○○ 40%</h2>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="section scroll-spy">
+        <div class="container">
+            <h1>Work</h1>
+            <div class="box9 back-to-position to-right delay-0"></div>
+            <div class="box10 back-to-position to-right delay-0"></div>
+            <div class="box11 back-to-position to-right delay-0"></div>
+            
+        </div>
+    </section>
+    <section class="section scroll-spy">
+        <div class="container">
+            <h1>Content</h1>
+            <div class="content">
+            <div class="box12 back-to-position to-right delay-0"></div>
+            <div class="box13 back-to-position to-right delay-0"></div>
+            <div class="box14 back-to-position to-right delay-0"></div>
+            </div>
+                <div class="content_right">
+            <div class="box15 back-to-position to-left delay-1">
+                <h3>010-6274-9184</h3>
+            </div>
+            <div class="box16 back-to-position to-left delay-1">
+                <h3>7472808@gmail.com</h3>
+            </div>
+            <div class="box17 back-to-position to-left delay-1">
+                <h3>ksvk__12.7</h3>
+            </div>
+                </div>
+        </div>
+    </section>
+    <script>
+        const spyEls = document.querySelectorAll('section.scroll-spy');
+        const controller = new ScrollMagic.Controller();
+
+        spyEls.forEach(function (spyEL) {
+            new ScrollMagic
+            .Scene({triggerElement: spyEL})
+            .setClassToggle(spyEL, 'show')
+            .addTo(controller)
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script>
+        const fadeEls = document.querySelectorAll(' .fade-in');
+        gsap.from(fadeEls, {
+            duration: 5,
+            scale: .3,
+            ease:'bounce.out',
+            opacity: 0,
+            stagger: 0.7
+        })
+    </script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
